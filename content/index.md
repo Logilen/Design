@@ -25,6 +25,4 @@ I understand Swedish and speak it with some challenges. The hardest part has sho
 
 Vi syns och hörs i forum och chatt!
 
-
-
-![me](%assets_url%/img/me.jpg)
+<img src="%assets_url%/img/me.jpg" alt="Alt Text" class="inLineCenter">
