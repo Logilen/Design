@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
- .site-header {
+.site-header {
     display: flex;
     justify-content: space-between;
 }
@@ -19,7 +19,7 @@
 }
 
 .logo {
-    padding: 1em 3em 3em 0;
+    padding: 3em 3em 3em 0;
 }
 
 .title * {
@@ -30,14 +30,31 @@
     font-style: italic;
 }
 
-@media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 1em 1em 0;
+@media (max-width: 920px) {
+    .title {
+        padding-top: 5em;
     }
+
+    .logo {
+        padding: 3em 1em 3em 0;
+    }
+}
+
+@media (max-width: 860px) {
     .title {
         min-width: 50%;
+        padding: 1em 1em 1em 0;
     }
+
     .logo {
-        max-width: 30%;
+        max-width: 50%;
+        padding: 1em 1em 1em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        padding-top: 2em;
+        min-width: 200px;
     }
 }

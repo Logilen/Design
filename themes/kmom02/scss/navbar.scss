@@ -1,12 +1,18 @@
 /* Navbar */
 .nav {
-    padding-right:15%;
+    padding-right: 15%;
 }
 
 .nav a {
-    opacity:0.8;
+    opacity: 0.8;
 }
 
-.nav a:hover  {
-    opacity:1;
+.nav a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 820px) {
+    .nav {
+        padding-right: 10%;
+    }
 }

@@ -1,4 +1,11 @@
 /* Main */
+%sharedmain {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 * {
     box-sizing: border-box;
     border: 0 none;
@@ -12,18 +19,23 @@
 
 .main {
     padding-left: 15%;
-    padding-right:15%;
+    padding-right: 15%;
     margin-bottom: 20px;
     flex: 1 0 auto;
 }
 
-html, body {
-    background-color: $background-color;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+html {
+    @extend %sharedmain;
 }
 
-ol, ul {
+body {
+    @extend %sharedmain;
+}
+
+ol {
+    padding-left: 1.5em;
+}
+
+ul {
     padding-left: 1.5em;
 }

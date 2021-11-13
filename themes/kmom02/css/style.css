@@ -6456,7 +6456,20 @@ template {
 /* Under mina övriga imports */
 /* Import SCSS files */
 /* Typografy */
+li, ul, ol, p {
+  text-align: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+li, ul, ol {
+  padding-left: 1.5em;
+  font-size: inherit;
+  margin-bottom: 0.7rem;
+}
+
 * {
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 
@@ -6465,46 +6478,19 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5rem;
+  font-size: 100%;
 }
 
-p, td, th, dd {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25em;
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+p {
+  font-size: 1.25rem;
   margin-bottom: 1.75rem;
   /* 1.4 * 1.25em vår baseline */
 }
 
-ol, ul, li {
-  padding-left: 1.5em;
-  font-size: inherit;
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0.7rem;
-}
-
 h1 {
-  font-size: 2.8em;
-  margin-bottom: 3.5rem;
+  font-size: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0.6em;
-  font-weight: bold;
-}
-
-@media (min-width: 64em) {
-  html {
-    font-size: 112.5%;
-  }
-}
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6562,7 +6548,7 @@ pre code {
 }
 
 .logo {
-  padding: 1em 3em 3em 0;
+  padding: 3em 3em 3em 0;
 }
 
 .title * {
@@ -6573,17 +6559,30 @@ pre code {
   font-style: italic;
 }
 
-@media (max-width: 767px) {
-  .title, .logo {
-    padding: 1em 1em 1em 0;
-  }
-
+@media (max-width: 920px) {
   .title {
-    min-width: 50%;
+    padding-top: 5em;
   }
 
   .logo {
-    max-width: 30%;
+    padding: 3em 1em 3em 0;
+  }
+}
+@media (max-width: 860px) {
+  .title {
+    min-width: 50%;
+    padding: 1em 1em 1em 0;
+  }
+
+  .logo {
+    max-width: 50%;
+    padding: 1em 1em 1em 0;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    padding-top: 2em;
+    min-width: 200px;
   }
 }
 /* Navbar */
@@ -6599,7 +6598,19 @@ pre code {
   opacity: 1;
 }
 
+@media (max-width: 820px) {
+  .nav {
+    padding-right: 10%;
+  }
+}
 /* Main */
+body, html {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6618,25 +6629,20 @@ pre code {
   flex: 1 0 auto;
 }
 
-html, body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+ol {
+  padding-left: 1.5em;
 }
 
-ol, ul {
+ul {
   padding-left: 1.5em;
 }
 
 /* Footer - example ( Bootstrap footer with columns ): https://www.web-eau.net/blog/10-best-footer-html-css-snippets  */
 .footer {
   flex: 0 0 auto;
-  border-top: lightgrey 2px solid;
-  background-color: #fff;
-  color: black;
-  box-shadow: inset 0px 2px 3px rgba(50, 50, 50, 0.75);
-  background-color: #E8E8E8;
+  border-top: #d3d3d3 2px solid;
+  box-shadow: inset 0 2px 3px rgba(50, 50, 50, 0.75);
+  background-color: #e8e8e8;
   opacity: 0.9;
   padding-left: 15%;
   padding-right: 15%;
@@ -6653,7 +6659,6 @@ ol, ul {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: #aaa;
   margin-bottom: 0;
 }
 
@@ -6669,9 +6674,9 @@ ol, ul {
 }
 
 .footer a {
-  color: black;
+  color: #000;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .footer a:hover {
@@ -6693,15 +6698,47 @@ ol, ul {
   margin-right: 20px;
 }
 
+@media (max-width: 1000px) {
+  .list-inline .item {
+    margin-right: 10px;
+  }
+
+  .footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 800px) {
+  .list-inline .item {
+    margin-right: 0;
+  }
+
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 /* Pictures */
 img {
   max-width: 100%;
 }
 
-.inLineCenter {
+.inlinecenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  padding: 1em;
+  padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .inlinecenter {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .inlinecenter {
+    width: 60%;
+    min-width: 200px;
+  }
 }

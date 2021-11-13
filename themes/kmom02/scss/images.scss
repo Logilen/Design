@@ -3,10 +3,23 @@ img {
     max-width: 100%;
 }
 
-.inLineCenter {
+.inlinecenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    padding: 1em;
+    padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .inlinecenter {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .inlinecenter {
+        width: 60%;
+        min-width: 200px;
+    }
 }

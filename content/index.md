@@ -3,7 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page - laan21 - PA1436 Teknisk Webbdesign
+PA1436 Teknisk Webbdesign - laan21
 ==========================
 
 
@@ -25,4 +25,4 @@ I understand Swedish and speak it with some challenges. The hardest part has sho
 
 Vi syns och hörs i forum och chatt!
 
-<img src="%assets_url%/img/me.jpg" alt="Alt Text" class="inLineCenter">
+<img src="%assets_url%/img/me.jpg" alt="Alt Text" class="inlinecenter">

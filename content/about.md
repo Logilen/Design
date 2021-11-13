@@ -16,7 +16,7 @@ Markdown is a text-to-HTML conversion tool that is used to add formatting elemen
 Twig is a PHP Template Engine. A template engine is something that combines templates with a data model to produce resulting documents. In our case Twig is used to combine HTML and PHP variables/functionality in a structured, readable and user friendly way across the website.
 
 ### SASS
-The website uses SASS which is a CSS pre-processor. It helps to structure the CSS code and allows the programmer to use variables etc. so changes to website lay-out are easily managed.
+The website uses SASS which is a CSS pre-processor. It helps to structure the CSS code and allows the programmer to use an increased number of functionalities such variables, nesting, mixins, inheritance etc. so changes to website lay-out is efficient and easily managed.
 
 ### Composer
 Composer is dependency manager used to track, handle, install and update all the PHP library dependencies.

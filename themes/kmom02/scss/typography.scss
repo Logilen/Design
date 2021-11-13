@@ -1,6 +1,19 @@
 /* Typografy */
 
+%sharedtypography {
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+%sharedlist {
+    padding-left: 1.5em;
+    font-size: inherit;
+    margin-bottom: 0.7rem;
+}
+
 * {
+    font-family: 'Roboto', sans-serif;
     color: $font-color;
 }
 
@@ -9,43 +22,30 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5rem;
+    font-size: 100%;
 }
 
-p, td, th, dd {
-    font-family: 'Roboto', sans-serif;
+p {
+    @extend %sharedtypography;
     font-size: $font-size-text;
-    text-align: justify;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
     margin-bottom: $magic-line-spacing; /* 1.4 * 1.25em vår baseline */
 }
 
-ol, ul, li {
-    padding-left: 1.5em;
-    font-size: inherit;
-    text-align: justify;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 0.7rem;
+ol {
+    @extend %sharedtypography;
+    @extend %sharedlist;
+}
+
+ul {
+    @extend %sharedtypography;
+    @extend %sharedlist;
+}
+
+li {
+    @extend %sharedtypography;
+    @extend %sharedlist;
 }
 
 h1 {
-font-size: 2.8em;
-margin-bottom: 3.5rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 0.6em;
-    font-weight: bold;
-}
-
-
-@media (min-width: 64em) {
-  html {
-    font-size: 112.5%;
-  }
+    font-size: $font-size-h1;
 }
