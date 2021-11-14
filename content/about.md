@@ -28,4 +28,4 @@ Node NPM is very similar to Composer just for JavaScript packages.
 Both Composer and Node NPM works with JSON files which is a text-based format used for representing structured data. The JSON files in this case stores a list of all the packages that are used, and which version.
 
 ### HTML, CSS, PHP and JavaScript
-Please refer to earlier courses :)
+Please refer to other courses :)

@@ -6545,10 +6545,16 @@ pre code {
 /* Title */
 .title {
   padding: 5em 3em 3em 0;
+  float: left;
 }
 
 .logo {
   padding: 3em 3em 3em 0;
+  float: left;
+}
+
+.burger {
+  padding-right: 10px;
 }
 
 .title * {
@@ -6568,21 +6574,32 @@ pre code {
     padding: 3em 1em 3em 0;
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 890px) {
   .title {
     min-width: 50%;
     padding: 1em 1em 1em 0;
   }
 
   .logo {
-    max-width: 50%;
     padding: 1em 1em 1em 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  .siteheader {
+    flex: 1 0 auto;
+    margin: 2em auto;
+    width: 96%;
+  }
+}
+@media (max-width: 550px) {
   .logo {
     padding-top: 2em;
-    min-width: 200px;
+    min-width: 100px;
+  }
+
+  .title {
+    min-width: 40%;
+    padding-right: 0;
   }
 }
 /* Navbar */
@@ -6623,10 +6640,10 @@ body, html {
 }
 
 .main {
+  flex: 1 0 auto;
   padding-left: 15%;
   padding-right: 15%;
   margin-bottom: 20px;
-  flex: 1 0 auto;
 }
 
 ol {
@@ -6637,6 +6654,14 @@ ul {
   padding-left: 1.5em;
 }
 
+@media (max-width: 767px) {
+  .main {
+    flex: 1 0 auto;
+    padding: 0;
+    width: 96%;
+    margin: 2em auto;
+  }
+}
 /* Footer - example ( Bootstrap footer with columns ): https://www.web-eau.net/blog/10-best-footer-html-css-snippets  */
 .footer {
   flex: 0 0 auto;
@@ -6716,6 +6741,13 @@ ul {
   .footer {
     padding-left: 5%;
     padding-right: 5%;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    flex: 1 0 auto;
+    margin: 2em auto;
+    width: 96%;
   }
 }
 /* Pictures */

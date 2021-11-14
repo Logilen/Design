@@ -83,3 +83,11 @@
         padding-right: 5%;
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        flex: 1 0 auto;
+        margin: 2em auto;
+        width: 96%;
+    }
+}
