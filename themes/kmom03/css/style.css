@@ -6544,12 +6544,12 @@ pre code {
 
 /* Title */
 .title {
-  padding: 5em 3em 3em 0;
+  padding: 5em 3em 1em 0;
   float: left;
 }
 
 .logo {
-  padding: 3em 3em 3em 0;
+  padding: 3em 3em 1em 0;
   float: left;
 }
 
@@ -6772,5 +6772,110 @@ img {
   .inlinecenter {
     width: 60%;
     min-width: 200px;
+  }
+}
+/* Technology page */
+/* Header css items */
+.technology {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.technology .aside {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  flex-shrink: 0;
+  padding-top: 2em;
+  margin: 0 auto;
+}
+.technology .aside a {
+  margin-bottom: 10px;
+}
+.technology .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+.technology .landingpage {
+  display: grid;
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 3rem;
+}
+.technology .landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+  height: 2rem;
+}
+.technology .landingpage .item {
+  display: flex;
+  flex-direction: column;
+}
+.technology .landingpage .item .box-title {
+  height: 2rem;
+  background-color: #606060;
+  display: flex;
+}
+.technology .landingpage .item .box-title h2 {
+  margin: auto;
+  color: #fff;
+}
+.technology .landingpage .item .box-descrip {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #606060;
+}
+.technology .landingpage .item .box-descrip p {
+  display: flex;
+  padding-left: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.technology .landingpage .item .box-descrip .image-link {
+  display: flex;
+  width: 17%;
+  flex-shrink: 0;
+}
+.technology .landingpage .item .box-descrip .arrow {
+  border-left: 2px solid #606060;
+  height: 100%;
+  opacity: 0.8;
+}
+.technology .landingpage .item .box-descrip .arrow:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .technology .landingpage {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+  }
+  .technology .landingpage h1 {
+    grid-column: span 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .technology .landingpage {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .technology .landingpage h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .technology .aside {
+    display: none !important;
   }
 }
