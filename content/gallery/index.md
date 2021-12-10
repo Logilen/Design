@@ -1,12 +1,12 @@
 ---
-Title: Galleri
+Title: Gallery
 Description: This page is showing a galleri
 Template: technology
 ---
 
 <div class = "landingpage">
 
-    <h1> Fungi Galleri</h1>
+    <h1> Fungi Gallery</h1>
 
     <div class ="image-div">
         <a href = "image/galleri/koralpigsvamp.JPG" target = "_blank">
