@@ -1,0 +1,19 @@
+/* Navbar */
+.nav {
+    padding-right: 15%;
+}
+
+.nav a {
+    color: $font-color;
+    opacity: 0.9;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 820px) {
+    .nav {
+        padding-right: 10%;
+    }
+}

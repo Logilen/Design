@@ -1,0 +1,48 @@
+/* Table */
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    background-color: $table-background-heading;
+}
+
+table, th, td {
+  border: 0.5px solid black;
+  border-collapse: collapse;
+}
+
+th {
+    font-size: 1.2vw;
+    text-align: left;
+    padding: 2px;
+    overflow-x: auto;
+}
+
+td {
+    font-size: 1.2vw;
+    overflow-x: auto;
+    background-color: $table-background-cell;
+    text-align: right;
+    padding: 2px;
+}
+
+.fat-row {
+    border-top: 2px solid black;
+}
+
+.fat-bottom {
+    border-bottom: 2px solid black;
+}
+
+.table-green {
+    background-color: $table-green;
+}
+
+.table-yellow {
+    background-color: $table-yellow;
+}
+
+.table-red {
+    background-color: $table-red;
+}

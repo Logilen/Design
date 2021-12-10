@@ -1,0 +1,52 @@
+/* Main */
+%sharedmain {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main {
+    flex: 1 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20px;
+}
+
+html {
+    @extend %sharedmain;
+}
+
+body {
+    @extend %sharedmain;
+}
+
+ol {
+    padding-left: 1.5em;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+@media (max-width: 767px) {
+    .main {
+        flex: 1 0 auto;
+        padding: 0;
+        width: 96%;
+        margin: 2em auto;
+    }
+
+
+}

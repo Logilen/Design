@@ -1,0 +1,73 @@
+/* Pictures */
+img {
+    max-width: 100%;
+}
+
+.galleri {
+    height: 200px;
+    width: 100%;
+    filter: brightness($filter-city-image-darkness);
+}
+
+.image-div {
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inlinecenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 1rem;
+    filter: brightness($filter-image-darkness);
+}
+
+.city {
+    width: 80%;
+    filter: brightness($filter-city-image-darkness);
+}
+
+figcaption {
+    margin: 0 auto;
+    font-size: $font-size-figcaption;
+    width: 80%;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .inlinecenter {
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) {
+    .galleri {
+        height: auto;
+    }
+
+    .image-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-div a {
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .inlinecenter {
+        width: 60%;
+        min-width: 200px;
+    }
+
+
+}

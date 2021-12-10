@@ -1,0 +1,95 @@
+/* Typografy */
+
+%sharedtypography {
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+%sharedlist {
+    padding-left: 1.5em;
+    font-size: inherit;
+    margin-bottom: 0.7rem;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: $font-color;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 100%;
+}
+
+p {
+    @extend %sharedtypography;
+    font-size: $font-size-text;
+    margin-bottom: $magic-line-spacing; /* 1.4 * 1.25em vår baseline */
+}
+
+ol {
+    @extend %sharedtypography;
+    @extend %sharedlist;
+}
+
+ul {
+    @extend %sharedtypography;
+    @extend %sharedlist;
+}
+
+li {
+    @extend %sharedtypography;
+    @extend %sharedlist;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+code {
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
+    border: 1px solid $code-border;
+    border-radius: 0.3em;
+    background: $code-background;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
+    margin-bottom: $magic-line-spacing; /* 1.4 * 1.25em vår baseline */
+}
+
+pre {
+    padding: 0 1em;
+    border: 1px solid $pre-border;
+    border-radius: 0.3em;
+    background: $pre-background;
+    margin-bottom: $magic-line-spacing; /* 1.4 * 1.25em vår baseline */
+}
+
+pre code {
+    display: block;
+    margin: 0;
+    padding: 1.1111em 0;
+    border: 0 none;
+    background: transparent;
+    overflow-x: auto;
+    line-height: 1.4;
+}
+
+.report {
+    h1 {
+        border-bottom: double $footer-border-top;
+    }
+
+    h2 {
+        margin-top: 1em;
+    }
+
+    h3 {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+
+/* Under mina övriga imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+/* Import SCSS files */
+@import 'variables';
+@import 'typography';
+@import 'blockquotes';
+@import 'header';
+@import 'navbar';
+@import 'main';
+@import 'footer';
+@import 'images';
+@import 'table';
+
+/* Technology page */
+@import 'technology';
