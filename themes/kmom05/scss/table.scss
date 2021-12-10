@@ -5,14 +5,13 @@ table {
     width: 100%;
     table-layout: fixed;
     background-color: $table-background-heading;
-}
-
-table, th, td {
-  border: 0.5px solid black;
-  border-collapse: collapse;
+    border: 0.5px solid $table-border;
+    border-collapse: collapse;
 }
 
 th {
+    border: 0.5px solid $table-border;
+    border-collapse: collapse;
     font-size: 1.2vw;
     text-align: left;
     padding: 2px;
@@ -20,19 +19,22 @@ th {
 }
 
 td {
+    border: 0.5px solid $table-border;
+    border-collapse: collapse;
     font-size: 1.2vw;
     overflow-x: auto;
     background-color: $table-background-cell;
     text-align: right;
     padding: 2px;
+    color: $table-td-color;
 }
 
 .fat-row {
-    border-top: 2px solid black;
+    border-top: 2px solid $table-border;
 }
 
 .fat-bottom {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $table-border;
 }
 
 .table-green {

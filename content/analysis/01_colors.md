@@ -6,7 +6,8 @@ Template: technology
 
 # Color schemes
 
-<div class = "date"> November 30th. 2021 <br> <br> </div>
+<div class = "date"> November 30th. 2021 <br> </div>
+<div class = "author"> Laurids Andersen (laan21) <br> <br> </div>
 
 # Introduction
 This report is an analysis of the color themes of the websites of the three capital cities of Scandinavia i.e. Norway, Sweden, and Denmark. A discussion will be presented of whether a color scheme has been used and the emotions that the different cities are communicating with the different color choices.

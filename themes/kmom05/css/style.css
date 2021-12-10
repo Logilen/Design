@@ -6855,14 +6855,13 @@ table {
   width: 100%;
   table-layout: fixed;
   background-color: #d3d3d3;
-}
-
-table, th, td {
-  border: 0.5px solid black;
+  border: 0.5px solid #000;
   border-collapse: collapse;
 }
 
 th {
+  border: 0.5px solid #000;
+  border-collapse: collapse;
   font-size: 1.2vw;
   text-align: left;
   padding: 2px;
@@ -6870,31 +6869,34 @@ th {
 }
 
 td {
+  border: 0.5px solid #000;
+  border-collapse: collapse;
   font-size: 1.2vw;
   overflow-x: auto;
   background-color: #fff;
   text-align: right;
   padding: 2px;
+  color: #0d0c0d;
 }
 
 .fat-row {
-  border-top: 2px solid black;
+  border-top: 2px solid #000;
 }
 
 .fat-bottom {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
 
 .table-green {
-  background-color: #98FF78;
+  background-color: #98ff78;
 }
 
 .table-yellow {
-  background-color: #FAE252;
+  background-color: #fae252;
 }
 
 .table-red {
-  background-color: #FF7265;
+  background-color: #ff7265;
 }
 
 /* Technology page */

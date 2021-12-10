@@ -6,7 +6,8 @@ Template: technology
 
 # Page speed and usability
 
-<div class = "date"> December 6th. 2021 <br> <br> </div>
+<div class = "date"> December 6th. 2021 <br> </div>
+<div class = "author"> Laurids Andersen (laan21) <br> <br> </div>
 
 # Introduction
 This report is an assessment of the loading speed of the webpage of three well-known universities in Sweden, two that offer an education in web programming and one that doesn't.
