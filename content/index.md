@@ -1,9 +1,10 @@
 ---
 Title: Home
 Description: This is our index page.
+Template: first-page
 ---
 
-PA1436 Teknisk Webbdesign - laan21
+PA1436 Teknisk Webbdesign
 ==========================
 
 
@@ -24,5 +25,3 @@ My hobbies are (when time lets me) watercolor painting, house building, mushroom
 I understand Swedish and speak it with some challenges. The hardest part has shown to be learning to write Swedish, which is why this is done in English.
 
 Vi syns och hörs i forum och chatt!
-
-<img src="%assets_url%/img/me.jpg" alt="Alt Text" class="inlinecenter">

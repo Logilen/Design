@@ -22,6 +22,21 @@
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 20px;
+
+}
+
+.first-page {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+    border: 5px solid $first-page-background;
+}
+
+.first-page-text {
+    padding-left: 2%;
+    width: 45%;
 }
 
 html {
@@ -40,12 +55,30 @@ ul {
     padding-left: 1.5em;
 }
 
+@media (max-width: 1000px) {
+    .first-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-page-text {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
 @media (max-width: 767px) {
     .main {
         flex: 1 0 auto;
         padding: 0;
         width: 96%;
         margin: 2em auto;
+    }
+
+    .first-page {
+        display: flex;
+        flex-direction: column;
     }
 
 

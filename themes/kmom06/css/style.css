@@ -6533,6 +6533,10 @@ pre code {
   margin-top: 1em;
 }
 
+.funky {
+  font-family: "Brush Script MT", cursive;
+}
+
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6668,6 +6672,20 @@ body, html {
   margin-bottom: 20px;
 }
 
+.first-page {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  justify-content: space-between;
+  border: 5px solid #bdbdbd;
+}
+
+.first-page-text {
+  padding-left: 2%;
+  width: 45%;
+}
+
 ol {
   padding-left: 1.5em;
 }
@@ -6676,12 +6694,28 @@ ul {
   padding-left: 1.5em;
 }
 
+@media (max-width: 1000px) {
+  .first-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-page-text {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 @media (max-width: 767px) {
   .main {
     flex: 1 0 auto;
     padding: 0;
     width: 96%;
     margin: 2em auto;
+  }
+
+  .first-page {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* Footer - example ( Bootstrap footer with columns ): https://www.web-eau.net/blog/10-best-footer-html-css-snippets  */
@@ -6791,6 +6825,11 @@ img {
   height: 200px;
   width: 100%;
   filter: brightness(100%);
+  border: 1px solid #000;
+}
+
+.high {
+  height: 416px;
 }
 
 .image-div {
@@ -6802,6 +6841,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.first-page-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #bdbdbd;
+  border: 5px solid #bdbdbd;
+}
+
+.me-photo {
+  object-fit: contain;
+  width: 90%;
 }
 
 .inlinecenter {
@@ -6848,6 +6901,15 @@ figcaption {
   .inlinecenter {
     width: 60%;
     min-width: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  .first-page-image {
+    width: 100%;
+  }
+
+  .me-photo {
+    width: 60%;
   }
 }
 /* Table */
@@ -6899,6 +6961,117 @@ td {
   background-color: #ff7265;
 }
 
+/* Header css items */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.gallery .aside {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  flex-shrink: 0;
+  padding-top: 2em;
+}
+.gallery .aside a {
+  margin-bottom: 10px;
+}
+.gallery .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+.gallery .landingpage {
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border: 3px solid #000;
+  background: linear-gradient 180deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 154, 0, 0.5) 10%, rgba(208, 222, 33, 0.5) 20%, rgba(79, 220, 74, 0.5) 30%, rgba(63, 218, 216, 0.5) 40%, rgba(47, 201, 226, 0.5) 50%, rgba(28, 127, 238, 0.5) 60%, rgba(95, 21, 242, 0.5) 70%, rgba(186, 12, 248, 0.5) 80%, rgba(251, 7, 217, 0.5) 90%, rgba(255, 0, 0, 0.5) 100%;
+}
+.gallery .landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+  height: 2rem;
+}
+.gallery .landingpage .one {
+  grid-row: span 2;
+}
+.gallery .landingpage .video-container {
+  grid-column: span 3;
+  justify-self: center;
+  margin-bottom: 2em;
+}
+.gallery .landingpage .video-container .video-frame {
+  margin: 1em;
+  width: 600px;
+  height: 450px;
+}
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    width: 90%;
+  }
+  .gallery .landingpage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    margin-bottom: 1rem;
+  }
+  .gallery .landingpage h1 {
+    grid-column: span 1;
+  }
+  .gallery .landingpage .video-container {
+    grid-column: span 1;
+  }
+  .gallery .landingpage .video-container .video-frame {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery .landingpage h1 {
+    font-size: 24px;
+  }
+  .gallery .landingpage .video-container {
+    grid-column: span 1;
+  }
+  .gallery .landingpage .video-container .video-frame {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery .landingpage .video-container .video-frame {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .technology {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .technology .landingpage h1 {
+    font-size: 20px;
+  }
+  .technology .landingpage .video-container .video-frame {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .technology .aside {
+    display: none !important;
+  }
+}
 /* Technology page */
 /* Header css items */
 .technology {

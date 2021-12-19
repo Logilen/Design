@@ -1,18 +1,18 @@
 ---
 Title: Gallery
-Description: This page is showing a galleri
-Template: technology
+Description: This page is showing a gallery
+Template: gallery
 ---
 
 <div class = "landingpage">
 
-    <h1> Fungi Gallery</h1>
+    <h1> <span class="funky">Fun'ky'</span> Gallery</h1>
 
-    <div class ="image-div">
+    <div class ="image-div one">
         <a href = "image/galleri/koralpigsvamp.JPG" target = "_blank">
             <source media="(min-width: 960px)" srcset="image/galleri/koralpigsvamp.JPG?w=500">
             <source media="(min-width: 450)" srcset="image/galleri/koralpigsvamp.JPG?w=1000">
-            <img src="image/galleri/koralpigsvamp.JPG?w=400" class = "galleri" alt="Hericium coralloides">
+            <img src="image/galleri/koralpigsvamp.JPG?w=400" class = "galleri high" alt="Hericium coralloides">
         </a>
     </div>
 
@@ -40,11 +40,11 @@ Template: technology
         </a>
     </div>
 
-    <div class ="image-div">
+    <div class ="image-div one">
         <a href = "image/galleri/tueporesvamp.JPG" target = "_blank">
             <source media="(min-width: 960px)" srcset="image/galleri/tueporesvamp.JPG?w=500">
             <source media="(min-width: 450)" srcset="image/galleri/tueporesvamp.JPG?w=1000">
-            <img src="image/galleri/tueporesvamp.JPG?w=400" class="galleri" alt="Grifola frondosa">
+            <img src="image/galleri/tueporesvamp.JPG?w=400" class="galleri high" alt="Grifola frondosa">
         </a>
     </div>
 

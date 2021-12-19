@@ -29,7 +29,7 @@ Template: technology
     <div class ="item">
         <div class = "box-title"> <h2> KMOM06 </h2> </div>
         <div class = "box-descrip">
-            <p>  </p>
+            <p> Design principles of websites </p>
             <a href="analysis/03_design_principles" class = "image-link arrow">
             </a>
         </div>

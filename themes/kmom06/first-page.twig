@@ -1,0 +1,21 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+
+    <div class="first-page">
+        <div class = "first-page-text">
+            {{ content }}
+        </div>
+        <div class="first-page-image">
+            <img src="{{ base_url }}/assets/img/me.jpg" alt="me photo" class = "me-photo" />
+        </div>
+
+
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

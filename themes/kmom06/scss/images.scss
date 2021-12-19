@@ -7,6 +7,11 @@ img {
     height: 200px;
     width: 100%;
     filter: brightness($filter-city-image-darkness);
+    border: 1px solid $black-color;
+}
+
+.high {
+    height: 416px;
 }
 
 .image-div {
@@ -20,6 +25,19 @@ img {
     justify-content: center;
 }
 
+.first-page-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: $first-page-background;
+    border: 5px solid $first-page-background;
+}
+
+.me-photo {
+    object-fit: contain;
+    width: 90%;
+}
 
 .inlinecenter {
     display: block;
@@ -68,6 +86,14 @@ figcaption {
         width: 60%;
         min-width: 200px;
     }
+}
 
+@media (max-width: 1000px) {
+    .first-page-image {
+        width: 100%;
+    }
 
+    .me-photo {
+        width: 60%;
+    }
 }
